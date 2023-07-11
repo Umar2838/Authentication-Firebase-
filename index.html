@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
     <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Nostra-Signup</title>
 </head>
 <body class="main-body">
+    <div class="card">
+        <div class="Signup-card">
+            <img src="images/ecommerce name.png" style="width: 250px; margin: 10px 10px 10px 50px ">
+            <a href="./index.html"><img class="signup-close" src="images/cancel.png"></a>
+            <h2>SignUp</h2></center>
+          
+            <span>UserName:</span><input required id="username" type="text" placeholder="FullName">
+        </br><span>Phone:</span><input required id="signup-phone" type="number" placeholder="Phone">
+        </br><span>Email:</span><input required id="signup-Email" type="email" placeholder="Email">
+    </br><span>Password</span><input required id="signup-Password" type="password" placeholder="Password">
+       
+        
+       <button id="signup-btn"  class="signup-button">Register</button>
+    </br>
+    <a class="login-link" href="./login.html"> Already have an account? <img class="link-icon" src="images/exit-top-right.png"> </a>
     
-    <div class="btn">
-<a class="main-btn" href="login.html">LoginIn</a>
-<a class="main-btn" href="signup.html">SignUP</a>
-<a class="main-btn" href="" >Profile</a>
+    </div>    
+    
 </div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script type="module" src="app.js"></script>
 </body>

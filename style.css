@@ -78,12 +78,23 @@ margin-top: -10px;
     height: 40px;
     color: #fff;
     background-color: black;
+    box-shadow: #716f6f 4px 4px 0px;
+    transition: transform 200ms,box-shadow 200ms;
     width:150px;
     margin: 0 auto;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold',
+    sans-serif
 
 }
+.login-button:hover{
+color: #000;
+background-color: #fff;
+}
+.login-button:active{
 
-
+    transform:  translateY(4px) translateX(4px);
+    box-shadow: #716f6f 0px 0px 0px;
+    }
 /* SignUp */
 
 body{
@@ -92,39 +103,79 @@ body{
     background-color: black;
 }
 .card{
-   margin: 100px auto;
-    width: 350px;
-    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.login-card{
+.Signup-card{
+
+
     border-radius: 4px;
+    min-width: 350px;
+     height: 580px;
     background-color: #fff;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold',
-     sans-serif
+    sans-serif
+   
+}
+h2{
+    letter-spacing: 4px;
+    text-align: center;
 }
 span{
     margin: 10px;
    
 }
 input{
-    margin: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    width: 90%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold',
+    sans-serif
     
 }
 .signup-close{
     height: 24px;
 }
 .signup-button{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
     border-radius: 4px;
     height: 40px;
+    box-shadow: #716f6f 4px 4px 0px;
+    transition: transform 200ms,box-shadow 200ms;
     color: #fff;
+    font-size: 18px;
     background-color: black;
     width:150px;
     margin: 0 auto;
     margin-top: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold',
+    sans-serif
 }
+.signup-button:hover{
+    color: #000;
+    background-color: #fff;
+
+}
+.signup-button:active{
+
+transform:  translateY(4px) translateX(4px);
+box-shadow: #716f6f 0px 0px 0px;
+}
+.login-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.link-icon{
+    width: 18px;
+    padding-left: 4px;
+}
+
