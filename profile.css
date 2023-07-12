@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+}
+.profile{
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    margin: 120px auto;
+    border-radius: 10px;
+    position: relative;
+}
+h1{
+    text-align: center;
+    padding-top: 0px;
+}
+p{
+    color: #fff;
+    font-size: 24px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: max-content;
+    background-color: #000;
+}
+.signup-close{
+    height: 24px;
+    margin-left: 300px;
+    margin-top: -50px;
+}
+h3{
+    padding: 5px 20px 5px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: max-content;
+    text-align: center;
+}
+.verify-btn{
+    background: rgb(0, 0, 0);
+    width: 120px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    /* margin-left: 250px; */
+    margin: 0 auto;
+    margin-top: -220px;
+    position: absolute;
+    transition: transform 200ms,box-shadow 200ms;
+    box-shadow: #716f6f 4px 4px 0px;
+
+}
+.verify-btn:active{
+
+    transform:  translateY(4px) translateX(4px);
+    box-shadow: #716f6f 0px 0px 0px;
+    }
+    .profile-btn{
+        background: rgb(0, 0, 0);
+        width: 120px;
+        font-weight: bold;
+        color: #fff;
+        border-radius: 10px;
+        margin-left: 250px;
+        margin-top: -166px;
+        padding: 8px;
+        position: absolute;
+        transition: transform 200ms,box-shadow 200ms;
+        box-shadow: #716f6f 4px 4px 0px;
+    
+    }
+    .profile-btn:active{
+    
+        transform:  translateY(4px) translateX(4px);
+        box-shadow: #716f6f 0px 0px 0px;
+        }
