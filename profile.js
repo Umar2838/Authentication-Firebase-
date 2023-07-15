@@ -1,6 +1,7 @@
-import {app , auth }  from "./firebase.js"
+import {app , auth,db }  from "./firebase.js"
 
-import { getAuth, onAuthStateChanged,sendEmailVerification ,updateProfile } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+import { getAuth, onAuthStateChanged,sendEmailVerification ,signOut } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+import { doc, getDocFromCache } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
 
 
 
@@ -9,7 +10,9 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     
     const uid = user.uid;
-    console.log(user)
+   
+    
+
 
 profile.innerHTML = (
 
@@ -44,29 +47,27 @@ verifybtn.addEventListener("click" ,() => {
         'success'
       )
 
+     
     });
 
 })
 
 
-var profile = document.getElementById("update")
+var Signout = document.getElementById("signout")
 
 
-profile.addEventListener("click",()=>{
-updateProfile(auth.currentUser, {
-  // displayName: "Jane Q. User", photoURL: "https://example.com/jane-q-user/profile.jpg"
-}).then(() => {
-  Swal.fire(
-    'Update',
-    'Your Profile is Up-to-Date',
-    'success'
-  )
-}).catch((error) => {
-  Swal.fire({
-    icon: 'error',
-    title: ' Error ',
-    text: ' Unexpected Error ',
-  })
-});
+Signout.addEventListener("click",()=>{
+  signOut(auth).then(() => {
+    
+    window.location.assign("../index.html")
+ 
+  
+  }).catch((error) => {
+    Swal.fire({
+      icon: 'error',
+      title: ' Unexpeccted Error',
+      text: 'Signout Error',
+    })
+  });
 
 })

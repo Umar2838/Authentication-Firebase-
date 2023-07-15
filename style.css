@@ -42,7 +42,7 @@ body{
 .card{
    margin: 100px auto;
     width: 350px;
-    height: 450px;
+    height: 500px;
 }
 .login-card{
     border-radius: 4px;
@@ -52,6 +52,7 @@ body{
 }
 span{
     margin: 10px;
+    margin-bottom: 10px;
    
 }
 input{
@@ -61,17 +62,26 @@ input{
     align-items: center;
     width: 95%;
     
+    
+}
+.other-login-icons{
+display: flex;
+padding: 10px;
+list-style: none;
+}
+.login-img{
+   width: 50px;
+    padding: 10px;
+    
 }
 .login-text{
-    margin-top: 10px;
+ 
     text-align: center;
-    /* margin-top: 20px; */
+    color: #000;
+
   
 }
-a:link{
-    color: #000;
-margin-top: -10px;
-}
+
 .login-button{
     margin-top: 30px;
     border-radius: 4px;
